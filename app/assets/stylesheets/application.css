@@ -23,14 +23,68 @@
  a {
      text-decoration: none;
  }
+ 
 
  /* clearfix::after */
 
- /* body's setting */
- .h2 {
-     color: red;
+ /* top.html settings */
+h1 {
+    padding: 20px;
+}
+
+ .top_text {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 40px;
  }
 
- .table {
-     color: grey;
+.start-b {
+    padding-top: 20px;
+    padding-left: 40px;
+    text-decoration: underline;
+}
+
+/* index.html settings */
+table {
+    padding-left: 30px;
+}
+
+ table td {
+     padding-top: 5px;
+     padding-right: 10px;
+     font-size: 13px;
  }
+ .link {
+    text-decoration: underline;
+ }
+ h2 {
+     padding-left: 20px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+ }
+ .form-box {
+     padding-left: 20px;
+ }
+
+ /* show.html settings */
+ .flash {
+     padding: 10px;
+     color: green;
+ }
+ .show-text {
+     padding-top: 20px;
+     padding-bottom: 10px;
+     padding-left: 40px;
+ }
+ .link-box {
+     padding-left: 20px;
+ }
+ .show-link {
+    color: black;
+    text-decoration: underline;
+ }
+
+ .form-box-edit {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}

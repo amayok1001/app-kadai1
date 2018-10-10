@@ -44,3 +44,9 @@ Things you may want to cover:
 ## RESTfulなURL
     resourcesを設定すると自動的にモデルが決まってくる
     
+## 変数
+    #{ } , @ ,
+    | |:ブロック変数　ループ処理で定義する変数
+
+## サクセスメッセージ
+    flash[:notice]

@@ -1,6 +1,12 @@
 <p id="notice"></p>
-    <h2>Books</h2>
-
+    <h1>Books</h1>
+    <div class="flash">
+    <% if flash[:notice] %>
+        <div class="flash">
+            <%= flash[:notice] %>
+        </div>
+        <% end %>
+    </div>
     <table>
         <tr>
             <th> <strong>Title</strong></th>
@@ -15,24 +21,28 @@
             <td>
                 <%= book.body %>
             </td>
-            <td>
-            <%= link_to 'Show', books_path(@book) %>
+            <td class="link">
+            <%= link_to 'Show', book_path(book), class: "show_#{book.id}", :style => "color: black;" %>
             </td>
-            <td>
-            <%= link_to 'Edit', books_path(@book) %>
+            <td class="link">
+            <%= link_to 'Edit', edit_book_path(book), class: "edit_#{book.id}", :style => "color: black;" %>
+            </td>
+            <td class="link">
+            <%= link_to 'Destroy', book_path(book), method: :delete, class: "destroy_#{book.id}", :style => "color: black;", data: { confirm: 'Are you sure?' } %>
             </td>
         </tr>
         <% end %>
     </table>
 
-    <h3> <strong>New book</strong></h3>
+    <h2> <strong>New book</strong></h2>
+    <div class="form-box">
     <%# ここにクリエイトボックスform_forヘルパーをつくる %>
     <%= form_for (@book) do |f| %>
         <h5> Title</h5>
-        <%= f.text_field :title %>
+        <%= f.text_field :title, class: "book_title" %>
         <h5> Body</h5>
-        <%= f.text_area :body %>
+        <%= f.text_area :body, class: "book_body" %>
         <br>
         <%= f.submit 'Create Book' %>
     <% end %>
-
+    </div>
