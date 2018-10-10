@@ -14,7 +14,7 @@
 
     <div class="link-box">
     <span class="show-link">
-        <%= link_to 'Show', book_path(@book) %></span>
+        <%= link_to 'Show', book_path(@book), class: "show_#{@book.id}"  %></span>
         |
-    <span class="show-link"><%= link_to 'Back', books_path %>
+    <span class="show-link"><%= link_to 'Back', books_path, class: "back" %>
     </span>

@@ -12,7 +12,7 @@
 
 <div class="link-box">
 <span class="show-link">
-    <%= link_to 'Edit', edit_book_path(@book) %></span>
+    <%= link_to 'Edit', edit_book_path(@book), class: "edit_#{@book.id}" %></span>
     |
-<span class="show-link"><%= link_to 'Back', books_path %>
+<span class="show-link"><%= link_to 'Back', books_path, class: "back" %>
 </span>
