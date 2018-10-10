@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+ /* clearfix::after */
+
+ /* body's setting */
+ .h2 {
+     color: red;
+ }
+
+ .table {
+     color: grey;
+ }
